@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 82px);
+  gap: 14px;
+}
+
+img {
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: white;
+}
+
+#display {
+  grid-column: span 4;
+  background-color: black;
+  color: white;
+  font-size: 32px;
+  text-align: right;
+  padding: 20px;
+  border: none;
+  outline: none;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #6d6d6d; 
+  color: #fff; 
+  transform: scale(1.05); 
+}
